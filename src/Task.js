@@ -7,7 +7,6 @@ const Task = () => {
   const [users, setUsers] = useState([]);
   const fetchData = async () => {
    const response = await fetch("http://jsonplaceholder.typicode.com/todos");
-  //  const data = response.json();
   setUsers(await response.json());
  }
 
@@ -20,7 +19,7 @@ const Task = () => {
 
   useEffect(() => {
     fetchData();
-    }, []);
+    },[]);
 
 
   return(<div className="containers">

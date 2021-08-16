@@ -6,7 +6,7 @@ import Task from './Task';
 import User from './User';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
     <div>

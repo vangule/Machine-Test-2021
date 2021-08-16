@@ -5,22 +5,20 @@ import Dropdown from './Dropdown';
 import Information from './Information';
 import Navbar from './Navbar';
 
-class Home extends React.Component{
-  render(){
-    return(
-       <div className="containers">
-        <div className="header">
-          <div className="dots"></div>
-          <div className="dots"></div>
-          <div className="dots"></div>  
-          <div className="title"> Machine Test-Nimap</div> 
-        </div>
-        <Navbar/>
-        <Dropdown/>
-        <Information/>
-      </div>
-    );
-  }
+const Home = () => {
+  return(
+      <div className="containers">
+       <div className="header">
+         <div className="dots"></div>
+         <div className="dots"></div>
+         <div className="dots"></div>  
+         <div className="title"> Machine Test-Nimap</div> 
+       </div>
+       <Navbar/>
+       <Dropdown/>
+       <Information/>
+     </div>
+  );
 }
 
 export default Home;
